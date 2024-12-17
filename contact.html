@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Meet kalkidan</title>
+</head>
+<body class="min-h-screen text-paragraph text-base font-Lato font-normal overflow-x-hidden bg-black transition-all delay-200">
+    <header class="flex justify-center bg-white">
+        <div class="fixed top-4 z-50 flex justify-between items-center w-11/12 h-12 px-4 bg-white/5 backdrop-blur-xl rounded-lg">
+            <p class="font-Lato text-lg font-extrabold cursor-default">Kal B.</p>
+            <div id="menu" class="sm:hidden">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18L19 18M13 6L19 6M5 12H19" stroke="#FFC800" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div id="main-nav" class="nav flex flex-col gap-4 fixed sm:hidden z-40 bg-light-black/75 top-0 right-0 w-full h-full  deActive">
+                <div id="close" class="self-end mx-4 my-2" >
+                    <svg width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.4129 6.91291C24.7791 6.5468 24.7791 5.9532 24.4129 5.58709C24.0468 5.22097 23.4532 5.22097 23.0871 5.58709L15 13.6742L6.91291 5.58709C6.5468 5.22097 5.9532 5.22097 5.58709 5.58709C5.22097 5.95321 5.22097 6.5468 5.58709 6.91292L13.6742 15L5.58712 23.0871C5.221 23.4532 5.221 24.0468 5.58712 24.4129C5.95324 24.779 6.54683 24.779 6.91295 24.4129L15 16.3258L23.0871 24.4129C23.4532 24.779 24.0468 24.779 24.4129 24.4129C24.779 24.0468 24.779 23.4532 24.4129 23.0871L16.3258 15L24.4129 6.91291Z" fill="#FFC800" />
+                    </svg>
+                </div>
+                <nav class="font-Oxanium text-xl font-extralight text-white flex flex-col bg-light-black gap-6 mx-6 ps-6 py-6 list-none rounded-xl border-white border">
+                    <a class="w-fit group cursor-pointer flex flex-col gap-1 justify-center items-center hover:text-accent-color" href="./index.html">HOME <div class="h-0.5 w-0 group-hover:w-11/12 transition-all delay-150 rounded-sm bg-accent-color"></div></a>
+                    <a class="w-fit group cursor-pointer flex flex-col gap-1 justify-center items-center hover:text-accent-color" href="./works.html">WORKS <div class="h-0.5 w-0 group-hover:w-11/12 transition-all delay-150 rounded-sm bg-accent-color"></div></a>
+                    <a class="w-fit group cursor-pointer flex flex-col gap-1 justify-center items-center hover:text-accent-color text-accent-color" href="./contact.html">CONTACT <div class="h-0.5 w-0 group-hover:w-11/12 transition-all delay-150 rounded-sm bg-accent-color"></div></a>
+                </nav>
+            </div>
+            <nav class="hidden font-Oxanium text-base font-extralight text-white sm:flex  items-center text-center justify-center gap-20 list-none">
+                <a class="relative w-fit group cursor-pointer flex flex-col justify-center items-center hover:text-accent-color" href="./index.html">HOME <div class="absolute bottom-0 h-0.5 w-0 group-hover:w-11/12 transition-all delay-150 rounded-sm bg-accent-color"></div></a>
+                <a class="relative w-fit group cursor-pointer flex flex-col justify-center items-center hover:text-accent-color" href="./works.html">WORKS <div class="absolute bottom-0 h-0.5 w-0 group-hover:w-11/12 transition-all delay-150 rounded-sm bg-accent-color"></div></a>
+                <a class="relative w-fit group cursor-pointer flex flex-col justify-center items-center hover:text-accent-color text-accent-color" href="./contact.html">CONTACT <div class="absolute bottom-0 h-0.5 w-0 group-hover:w-11/12 transition-all delay-150 rounded-sm bg-accent-color"></div></a>
+            </nav>
+            
+        </div>
+        <div id="cover-card" class="h-screen sm:hidden w-screen fixed z-30 bg-black/65 deActive"></div>
+    </header>
+    <section class="hero contact-hero relative flex items-center justify-center top-0 z-0 w-screen h-[60vh] bg-[url('./images/mobile/mobile-contact-hero.png')] sm:bg-[url('./images/desktop/contact-hero.png')] bg-cover bg-center">
+        <div class="flex items-center justify-center gap-4 flex-col w-11/12 sm:w-9/12 text-center">
+            <h1 class="text-xl sm:text-2xl lg:text-3xl  text-primary-white font-Orbitron font-semibold sm:w-11/12">
+                Feel free to <span class="text-accent-color font-black">Reach me</span>
+            </h1>
+            <p class="sm:w-8/12">
+                Feel free to reach out with any project ideas or collaboration opportunities. I’m excited to bring your vision to life through engaging video content. Just a message away!
+            </p>
+        </div>
+    </section>
+    
+    <section class="flex items-center justify-center pt-8 pb-16 ">
+        <div class="flex flex-col lg:flex-row items-start sm:items-center lg:items-start justify-center gap-16 w-11/12">
+            <div class="flex flex-col gap-12 w-fit pt-4">
+                <div class="flex flex-col gap-4 ">
+                    <h2 class="flex items-center gap-2 font-Oxanium text-white font-semibold text-2xl">Get In <span class="text-accent-color">Touch</span></h2>
+                    <p class="w-full sm:w-100 ">Reach out with any ideas or questions. I’m excited to explore the possibilities together.</p>
+                    <div class="flex gap-4">
+                        <p class="font-Oxanium text-white text-lg">Social links :</p>
+                        <div class="flex gap-2">
+                            <a class="hover:underline" href="">Email</a>
+                            <p>/</p>
+                            <a class="hover:underline" href="">YouTube</a>
+                            <p>/</p>
+                            <a class="hover:underline" href="">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h2 class="flex items-center gap-2 font-Oxanium text-white font-semibold text-2xl"><span class="text-accent-color">Subscribe</span> to my channel</h2>
+                    <div class="flex justify-start items-center gap-10">
+                        <div class="flex gap-2 items-center justify-start">
+                            <img class="w-12 h-12" src="./assets/mobile/kalkidan-phone-subscribe.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <a href="" class="text-white text-lg">Kalikidan Birhanu</a>
+                                <p class="text-white/60 text-sm">30 subscribers</p>
+                            </div>
+                        </div>
+                        <a href="" class="bg-white hover:bg-white/85 text-black px-6 py-2 font-semibold rounded-3xl">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="w-full sm:w-fit text-paragraph font-Lato flex justify-center ">
+                <div class="w-full sm:w-98 flex flex-col gap-6 bg-[#0B0B0B] p-6 rounded-md">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex flex-col">
+                            <label  class="ps-2" for="name">Name</label>
+                            <input class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" type="text" id="name">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="ps-2" for="email">E-mail</label>
+                            <input  class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" type="email" name="" id="email">
+                        
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="ps-2" for="subject">Subject</label>
+                            <input class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" type="text" name="" id="subject">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="ps-2" for="massage">Massage</label>
+                            <textarea class= "bg-[#1D1D1D] w-full min-h-24 outline-none border-0 text-white/80 rounded-lg px-2 py-2 focus:border-[.1px] border-white/40" name="" id="massage"></textarea>
+                        </div>
+                    </div>
+                    <button class="bg-accent-color text-lg font-Oxanium font-bold w-full px-10 py-2 text-dark-gray rounded-lg hover:bg-accent-color/85">SEND</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <my-footer></my-footer>
+    <script src="./src/main.js"></script>
+    <script src="./src/template.js"></script>
+</body>
+</html>

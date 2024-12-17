@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    display: flex;
+}
+.deActive{
+    display: none;
+}
+@layer utilities {
+    .scrollbar {
+      scrollbar-width: thin; 
+      scrollbar-color: hsla(45, 100%, 50%, 0.75) #000000;
+    }
+  
+    .scrollbar::-webkit-scrollbar {
+      height: 2px; 
+      display: none;
+    }
+  
+    .scrollbar::-webkit-scrollbar-thumb {
+      background: #000000;
+      border-radius: 12px;
+    }
+  
+    .scrollbar::-webkit-scrollbar-track {
+      background: #000000; 
+      border-radius: 12px;
+      margin-top: 4px;
+    }
+}
+  
+.card{
+    padding-block-end: .5rem;
+    display: flex ;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+    padding-top: 2rem;
+}
+::-webkit-scrollbar-track{
+    background:  #000000;
+    border-radius: 100vw;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: hsla(47, 100%, 50%, 0.70);
+    border-radius: 100vw;
+    border: 1px solid #000;
+    padding-block: 2rem;
+}
+
+.works::-webkit-scrollbar-track{
+  background:  hsl(0, 0%, 5%);
+}
+.works::-webkit-scrollbar-thumb{
+  background-color: hsla(47, 100%, 50%, 0.70);
+  border: 1px solid hsl(0, 0%, 5%);
+}
+
+.videos::-webkit-scrollbar-track{
+  background:  hsl(0, 0%, 10%);
+  border-radius: 100vw;
+  
+}
+.videos::-webkit-scrollbar-thumb{
+  background-color: hsla(47, 100%, 50%, 0.70);
+  border: 1px solid hsl(0, 0%, 5%);
+}
+
+.filter-add{
+  justify-content: center;
+  flex-wrap: wrap;
+}
