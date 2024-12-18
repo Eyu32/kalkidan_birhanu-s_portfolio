@@ -79,3 +79,17 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.input.success input {
+  border: 2px solid #09c372; /* Green border for success */
+}
+
+.input.error input {
+  border: 2px solid #ff3860; /* Red border for error */
+}
+
+.input .input-error {
+  color: #ff3860; /* Red color for error message */
+  font-size: 13px;
+  margin-top: 4px; /* Slight spacing */
+}

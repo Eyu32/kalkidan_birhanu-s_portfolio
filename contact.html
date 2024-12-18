@@ -9,7 +9,7 @@
 <body class="min-h-screen text-paragraph text-base font-Lato font-normal overflow-x-hidden bg-black transition-all delay-200">
     <header class="flex justify-center bg-white">
         <div class="fixed top-4 z-50 flex justify-between items-center w-11/12 h-12 px-4 bg-white/5 backdrop-blur-xl rounded-lg">
-            <p class="font-Lato text-lg font-extrabold cursor-default">Kal B.</p>
+            <a href="./index.html" class="font-Lato text-lg font-extrabold cursor-default">Kal B.</a>
             <div id="menu" class="sm:hidden">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M9 18L19 18M13 6L19 6M5 12H19" stroke="#FFC800" stroke-width="1.5" stroke-linecap="round" />
@@ -47,7 +47,7 @@
         </div>
     </section>
     
-    <section class="flex items-center justify-center pt-8 pb-16 ">
+    <section class="flex items-center justify-center pt-24 pb-16 ">
         <div class="flex flex-col lg:flex-row items-start sm:items-center lg:items-start justify-center gap-16 w-11/12">
             <div class="flex flex-col gap-12 w-fit pt-4">
                 <div class="flex flex-col gap-4 ">
@@ -78,32 +78,65 @@
                     </div>
                 </div>
             </div>
-            <form action="" class="w-full sm:w-fit text-paragraph font-Lato flex justify-center ">
-                <div class="w-full sm:w-98 flex flex-col gap-6 bg-[#0B0B0B] p-6 rounded-md">
-                    <div class="flex flex-col gap-2">
-                        <div class="flex flex-col">
-                            <label  class="ps-2" for="name">Name</label>
-                            <input class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" type="text" id="name">
-                        </div>
-                        <div class="flex flex-col">
-                            <label class="ps-2" for="email">E-mail</label>
-                            <input  class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" type="email" name="" id="email">
-                        
-                        </div>
-                        <div class="flex flex-col">
-                            <label class="ps-2" for="subject">Subject</label>
-                            <input class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" type="text" name="" id="subject">
-                        </div>
-                        <div class="flex flex-col">
-                            <label class="ps-2" for="massage">Massage</label>
-                            <textarea class= "bg-[#1D1D1D] w-full min-h-24 outline-none border-0 text-white/80 rounded-lg px-2 py-2 focus:border-[.1px] border-white/40" name="" id="massage"></textarea>
-                        </div>
-                    </div>
-                    <button class="bg-accent-color text-lg font-Oxanium font-bold w-full px-10 py-2 text-dark-gray rounded-lg hover:bg-accent-color/85">SEND</button>
-                </div>
-            </form>
+            <form 
+  id="form" 
+  action="" 
+  class="w-full sm:w-fit text-paragraph font-Lato flex justify-center">
+  
+  <div class="w-full sm:w-98 flex flex-col gap-6 bg-[#0B0B0B] p-6 rounded-md">
+    <div class="flex flex-col gap-2">
+      <!-- Name Input -->
+      <div class="flex flex-col input">
+        <label class="ps-2" for="user-name">Name</label>
+        <input 
+          class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" 
+          type="text" 
+          id="user-name">
+        <p class="input-error text-red-700 fixed top-24"></p>
+      </div>
+
+      <!-- Email Input -->
+      <div class="flex flex-col input">
+        <label class="ps-2" for="email">E-mail</label>
+        <input 
+          class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" 
+          type="email" 
+          id="email">
+        <p class="input-error text-red-700 fixed top-24">Eyu Birhanu</p>
+      </div>
+
+      <!-- Subject Input -->
+      <div class="flex flex-col input">
+        <label class="ps-2" for="subject">Subject</label>
+        <input 
+          class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" 
+          type="text" 
+          id="subject">
+        <p class="input-error"></p>
+      </div>
+
+      <!-- Message Input -->
+      <div class="flex flex-col input">
+        <label class="ps-2" for="message">Message</label>
+        <textarea 
+          class="bg-[#1D1D1D] w-full min-h-24 outline-none border-0 text-white/80 rounded-lg px-2 py-2 focus:border-[.1px] border-white/40" 
+          id="message"></textarea>
+        <p class="input-error "></p>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button 
+      type="submit" id="submit-btn" 
+      class="bg-accent-color text-lg font-Oxanium font-bold w-full px-10 py-2 text-dark-gray rounded-lg hover:bg-accent-color/85">
+      SEND
+    </button>
+  </div>
+</form>
+
         </div>
     </section>
+
     <my-footer></my-footer>
     <script src="./src/main.js"></script>
     <script src="./src/template.js"></script>
