@@ -80,7 +80,8 @@
             </div>
             <form 
   id="form" 
-  action="" 
+  method="POST"
+  action="https://formspree.io/f/xyzgorja" 
   class="w-full sm:w-fit text-paragraph font-Lato flex justify-center">
   
   <div class="w-full sm:w-98 flex flex-col gap-6 bg-[#0B0B0B] p-6 rounded-md">
@@ -92,17 +93,17 @@
           class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" 
           type="text" 
           id="user-name">
-        <p class="input-error text-red-700 fixed top-24"></p>
+          
       </div>
 
       <!-- Email Input -->
       <div class="flex flex-col input">
-        <label class="ps-2" for="email">E-mail</label>
-        <input 
-          class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" 
-          type="email" 
-          id="email">
-        <p class="input-error text-red-700 fixed top-24">Eyu Birhanu</p>
+            <label class="ps-2" for="email">E-mail</label>
+            <input 
+            class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" 
+            type="email" 
+            id="email">
+            
       </div>
 
       <!-- Subject Input -->
@@ -112,7 +113,6 @@
           class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" 
           type="text" 
           id="subject">
-        <p class="input-error"></p>
       </div>
 
       <!-- Message Input -->
@@ -121,7 +121,6 @@
         <textarea 
           class="bg-[#1D1D1D] w-full min-h-24 outline-none border-0 text-white/80 rounded-lg px-2 py-2 focus:border-[.1px] border-white/40" 
           id="message"></textarea>
-        <p class="input-error "></p>
       </div>
     </div>
 
@@ -131,11 +130,17 @@
       class="bg-accent-color text-lg font-Oxanium font-bold w-full px-10 py-2 text-dark-gray rounded-lg hover:bg-accent-color/85">
       SEND
     </button>
+    
   </div>
 </form>
+<div id="input-error" class="flex gap-1 items-center justify-center flex-col fixed top-16 left-1/2 translate-x-[-50%]">
+                
+</div>
 
         </div>
     </section>
+
+    
 
     <my-footer></my-footer>
     <script src="./src/main.js"></script>
