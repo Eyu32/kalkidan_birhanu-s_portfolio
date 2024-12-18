@@ -54,9 +54,13 @@ filterBtns.addEventListener('click', function(e) {
         }
 
         allFilterBtns.forEach(function (btn) {
-            btn.classList.remove('bg-white/20');
+            btn.classList.remove('bg-white/90', 'font-semibold', 'text-black', 'text-primary-white');
+            btn.classList.add('hover:bg-white/10');
+            allBtn.classList.remove('bg-white/90', 'font-semibold', 'text-black', 'text-primary-white');
+            allBtn.classList.add('hover:bg-white/10');
         });
-        eTarget.classList.add('bg-white/20');
+        eTarget.classList.add('bg-white/90', 'font-semibold', 'text-black');
+        eTarget.classList.remove('hover:bg-white/10');
     }
 });
 
@@ -70,10 +74,12 @@ allBtn.addEventListener('click', function () {
     });
 
     allFilterBtns.forEach(function (btn) {
-        btn.classList.remove('bg-white/20');
+        btn.classList.remove('bg-white/90', 'font-semibold', 'text-primary-white', 'text-black');
+        btn.classList.add('hover:bg-white/10');
     });
 
-    allBtn.classList.add('bg-white/20');
+    allBtn.classList.add('bg-white/90', 'font-semibold', 'text-black');
+    allBtn.classList.remove('hover:bg-white/10');
 
     if (document.body.contains(noResultContainer)) {
         noResultContainer.remove();

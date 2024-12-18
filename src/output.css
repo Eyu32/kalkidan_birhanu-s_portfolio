@@ -655,6 +655,82 @@ video {
   top: 1rem;
 }
 
+.right-2{
+  right: 0.5rem;
+}
+
+.bottom-12{
+  bottom: 3rem;
+}
+
+.bottom-2{
+  bottom: 0.5rem;
+}
+
+.bottom-4{
+  bottom: 1rem;
+}
+
+.bottom-\[4px\]{
+  bottom: 4px;
+}
+
+.bottom-\[8px\]{
+  bottom: 8px;
+}
+
+.bottom-\[20px\]{
+  bottom: 20px;
+}
+
+.bottom-\[40px\]{
+  bottom: 40px;
+}
+
+.bottom-\[60px\]{
+  bottom: 60px;
+}
+
+.bottom-\[70px\]{
+  bottom: 70px;
+}
+
+.right-\[10px\]{
+  right: 10px;
+}
+
+.right-\[5px\]{
+  right: 5px;
+}
+
+.right-\[2px\]{
+  right: 2px;
+}
+
+.right-\[0px\]{
+  right: 0px;
+}
+
+.-right-\[4px\]{
+  right: -4px;
+}
+
+.-right-\[8px\]{
+  right: -8px;
+}
+
+.-right-\[12px\]{
+  right: -12px;
+}
+
+.-right-\[20px\]{
+  right: -20px;
+}
+
+.bottom-\[35px\]{
+  bottom: 35px;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -743,6 +819,10 @@ video {
   height: 100vh;
 }
 
+.h-\[2px\]{
+  height: 2px;
+}
+
 .min-h-24{
   min-height: 6rem;
 }
@@ -804,6 +884,22 @@ video {
   width: 100vw;
 }
 
+.w-8{
+  width: 2rem;
+}
+
+.w-16{
+  width: 4rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.w-3{
+  width: 0.75rem;
+}
+
 .min-w-\[160px\]{
   min-width: 160px;
 }
@@ -815,6 +911,11 @@ video {
 
 .translate-x-\[-50\%\]{
   --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-90{
+  --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1065,16 +1166,21 @@ video {
   background-color: rgb(255 255 255 / 0.1);
 }
 
-.bg-white\/20{
-  background-color: rgb(255 255 255 / 0.2);
-}
-
 .bg-white\/25{
   background-color: rgb(255 255 255 / 0.25);
 }
 
 .bg-white\/5{
   background-color: rgb(255 255 255 / 0.05);
+}
+
+.bg-white\/90{
+  background-color: rgb(255 255 255 / 0.9);
+}
+
+.bg-primary-white{
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 90% / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'\.\/images\/mobile\/mobile-contact-hero\.png\'\)\]{
@@ -1307,6 +1413,11 @@ video {
   color: rgb(255 255 255 / 0.8);
 }
 
+.text-light-black{
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 5% / var(--tw-text-opacity, 1));
+}
+
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1422,6 +1533,11 @@ video {
   background-color: rgb(255 255 255 / 0.85);
 }
 
+.hover\:bg-light-black:hover{
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 5% / var(--tw-bg-opacity, 1));
+}
+
 .hover\:text-accent-color:hover{
   --tw-text-opacity: 1;
   color: hsl(47 100% 50% / var(--tw-text-opacity, 1));
@@ -1429,6 +1545,16 @@ video {
 
 .hover\:text-white\/80:hover{
   color: rgb(255 255 255 / 0.8);
+}
+
+.hover\:text-black:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-primary-white:hover{
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 90% / var(--tw-text-opacity, 1));
 }
 
 .hover\:underline:hover{
@@ -1442,6 +1568,14 @@ video {
 @media (min-width: 640px){
   .sm\:visible{
     visibility: visible;
+  }
+
+  .sm\:-right-\[8px\]{
+    right: -8px;
+  }
+
+  .sm\:bottom-\[70px\]{
+    bottom: 70px;
   }
 
   .sm\:flex{
@@ -1491,6 +1625,14 @@ video {
   .sm\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .sm\:w-16{
+    width: 4rem;
+  }
+
+  .sm\:w-6{
+    width: 1.5rem;
   }
 
   .sm\:min-w-\[200px\]{

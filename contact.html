@@ -80,8 +80,9 @@
             </div>
             <form 
   id="form" 
+  action="https://formspree.io/f/mldeykee" 
   method="POST"
-  action="https://formspree.io/f/xyzgorja" 
+  data-format="json"
   class="w-full sm:w-fit text-paragraph font-Lato flex justify-center">
   
   <div class="w-full sm:w-98 flex flex-col gap-6 bg-[#0B0B0B] p-6 rounded-md">
@@ -92,7 +93,8 @@
         <input 
           class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" 
           type="text" 
-          id="user-name">
+          id="user-name"
+          name="user-name">
           
       </div>
 
@@ -102,7 +104,8 @@
             <input 
             class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" 
             type="email" 
-            id="email">
+            id="email"
+            name="email">
             
       </div>
 
@@ -112,7 +115,8 @@
         <input 
           class="bg-[#1D1D1D] w-full h-12 outline-none border-0 text-white/80 rounded-lg px-2 focus:border-[.1px] border-white/40" 
           type="text" 
-          id="subject">
+          id="subject"
+          name="subject">
       </div>
 
       <!-- Message Input -->
@@ -120,7 +124,8 @@
         <label class="ps-2" for="message">Message</label>
         <textarea 
           class="bg-[#1D1D1D] w-full min-h-24 outline-none border-0 text-white/80 rounded-lg px-2 py-2 focus:border-[.1px] border-white/40" 
-          id="message"></textarea>
+          id="message"
+          name="message"></textarea>
       </div>
     </div>
 
