@@ -21,7 +21,7 @@ const setError = (element, message) => {
     errorBox.className =
         "bg-[#ea5353] flex flex-col w-fit rounded-lg items-start gap-[3px] justify-center px-4 py-3";
     errorBox.innerHTML = `
-        <div class="flex items-center gap-2 text-white text-sm">
+        <div class="flex items-center gap-2 text-white text-sm w-40 text-center">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_183_15)">
                     <path d="M11.9999 18.0869C10.3643 18.0869 9.03368 19.4175 9.03368 21.0531C9.18279 24.9828 14.8176 24.9818 14.9661 21.0531C14.9661 19.4175 13.6355 18.0869 11.9999 18.0869ZM14.9647 1.36977C13.4928 -0.456159 10.5079 -0.45705 9.03536 1.36986C8.29798 2.24772 7.98841 3.39863 8.18605 4.52749C8.7754 7.89478 9.60712 12.6473 9.98038 14.7817C10.3986 17.0283 13.6017 17.0276 14.0194 14.7818L15.8141 4.52749C16.0117 3.39868 15.7022 2.24772 14.9647 1.36977Z" fill="white"/>
